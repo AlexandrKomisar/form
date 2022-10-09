@@ -9,3 +9,13 @@ form.addEventListener("input", function (event) {
   LS.setItem("formData", JSON.stringify(formData));
   console.log(formData);
 });
+
+// відновити данні
+
+if (LS.getItem("formData")) {
+  formData = JSON.parse(LS.getItem("formData"));
+  // form.elements[name];
+  for (let key in formData) {
+    form.elements[key].value = formData[key];
+  }
+}
