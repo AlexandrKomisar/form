@@ -1,3 +1,18 @@
 .div-form {
   padding: 10px;
 }
+
+.btn {
+  background-color: #04ea17;
+  border: none;
+  border-radius: 15px;
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#foo {
+  border: solid blue 2px;
+}

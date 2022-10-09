@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let formData = {};
+  let formData = [];
   const form = document.querySelector("form");
   const LS = localStorage;
 
