@@ -1,13 +1,12 @@
 let btn = document.querySelector(".btn");
 
-
 const options = {
   //фаза на якій повинен спрацювати обработчик
-  'capture': true,
+  capture: true,
   //якщо true то обработчик видалиться після виконання
-  'once': false,
+  once: false,
   //
-  'passive': false,
+  passive: false,
 };
 
 btn.addEventListener("click", clicked, options);
@@ -20,14 +19,14 @@ function clicked() {
 }
 
 // drop menu
-const menuBody = document.querySelector('.menu')
-document.addEventListener('click',menu)
+const menuBody = document.querySelector(".menu");
+document.addEventListener("click", menu);
 
-function menu(event){
-  if (event.target.closest('.menu_button')){
-    menuBody.classList.toggle('_active')
+function menu(event) {
+  if (event.target.closest(".menu__button")) {
+    menuBody.classList.toggle("_active");
   }
-  if (!event.target.closest('.menu_button')){
-    menuBody.classList.toggle('_active')
+  if (!event.target.closest(".menu")) {
+    menuBody.classList.remove("_active");
   }
 }
